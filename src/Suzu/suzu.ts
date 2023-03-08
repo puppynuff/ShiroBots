@@ -1,14 +1,16 @@
+//! Replica of Shiro Bot, going to be edited for extra uses when time comes.
+
 //? Importing modules
 import { GatewayIntentsString, Client, Message, CommandInteraction, Interaction, ActivityType } from "discord.js";
 import glob from "glob";
 
 //? Creating Class for discord bot
-export default class Shiro {
+export default class Suzu {
     //? Creating variables
     client: Client;
     commands: Array<command>;
     commandNames: Array<string>;
-    prefix: string = "s!";
+    prefix: string = ".";
     commandHelp: Array<{
         name: string;
         description: string;
@@ -37,10 +39,9 @@ export default class Shiro {
 
         this.client.user?.setStatus("dnd");
         this.client.user?.setActivity({
-            name: "to /imagine",
-            type: ActivityType.Listening
+            type: ActivityType.Listening,
+            name: "To /info"
         })
-
     }
 
     //? Event handler
@@ -108,7 +109,6 @@ export default class Shiro {
                     return;
                 } catch (err) {
                     message.reply("There was an error!");
-                    console.log(err);
                     return;
                 }
             }
@@ -122,7 +122,7 @@ export default class Shiro {
     //? Registering commands
     #registerCommands() {
         //? For each file in the commands directory push the stuff into the commands array.
-        glob(`${process.cwd().replaceAll("\\", "/")}/dist/Shiro/commands/**/*.js`, async (err, files) => {
+        glob(`${process.cwd().replaceAll("\\", "/")}/dist/Suzu/commands/**/*.js`, async (err, files) => {
             //? If there is an error throw the error.
             if (err) throw new Error(err.message);
 
@@ -148,25 +148,25 @@ export default class Shiro {
 }
 
 
-function checkPatron(interaction: Interaction | undefined, message: Message | undefined, shiro: Shiro) {
+function checkPatron(interaction: Interaction | undefined, message: Message | undefined, suzu: Suzu) {
     if (interaction) {
-        return shiro.client.guilds.cache.get("967117817663074304")?.members.cache.get(interaction.user.id)?.roles.cache.get("1020064127659548702") ? true : false;
+        return suzu.client.guilds.cache.get("967117817663074304")?.members.cache.get(interaction.user.id)?.roles.cache.get("1020064127659548702") ? true : false;
     }
 
     if (message) {
-        return shiro.client.guilds.cache.get("967117817663074304")?.members.cache.get(message.author.id)?.roles.cache.get("1020064127659548702") ? true : false;
+        return suzu.client.guilds.cache.get("967117817663074304")?.members.cache.get(message.author.id)?.roles.cache.get("1020064127659548702") ? true : false;
     }
 
     return false;
 }
 
-function checkAccess(interaction: Interaction | undefined, message: Message | undefined, shiro: Shiro) {
+function checkAccess(interaction: Interaction | undefined, message: Message | undefined, suzu: Suzu) {
     if (interaction) {
-        return shiro.client.guilds.cache.get("967117817663074304")?.members.cache.get(interaction.user.id)?.roles.cache.get("1020128179001765918") ? true : false;
+        return suzu.client.guilds.cache.get("967117817663074304")?.members.cache.get(interaction.user.id)?.roles.cache.get("1020128179001765918") ? true : false;
     }
 
     if (message) {
-        return shiro.client.guilds.cache.get("967117817663074304")?.members.cache.get(message.author.id)?.roles.cache.get("1020128179001765918") ? true : false;
+        return suzu.client.guilds.cache.get("967117817663074304")?.members.cache.get(message.author.id)?.roles.cache.get("1020128179001765918") ? true : false;
     }
 
     return false;
@@ -202,7 +202,7 @@ export interface command {
     };
     patreon: boolean;
     early_access: boolean;
-    run: (shiro: Shiro, interaction: CommandInteraction | undefined, message: Message | undefined, args: Array<string> | undefined) => void;
+    run: (Suzu: Suzu, interaction: CommandInteraction | undefined, message: Message | undefined, args: Array<string> | undefined) => void;
 }
 
 //? Command option type

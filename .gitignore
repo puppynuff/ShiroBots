@@ -4,3 +4,5 @@ src/Shiro/commands/private/
 dist/
 .env
 images/
+src/Suzu/commands/private
+database/
