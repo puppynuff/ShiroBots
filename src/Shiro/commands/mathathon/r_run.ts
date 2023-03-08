@@ -1,4 +1,4 @@
-import { command } from "../../shiro";
+import { command, CommandOptionType } from "../../shiro";
 import { exec } from "child_process";
 import fs from "fs";
 
@@ -7,6 +7,7 @@ class os_func {
         exec(cmd, (error, stdout, stderr) => {
             if (error) {
                 console.error(`exec error: ${error}`);
+                callback(error.message);
                 return;
             }
 
@@ -42,17 +43,15 @@ let mathathon: command = {
             name: "r_run",
             description: "Code to run",
             required: true,
-            type: 3
+            type: CommandOptionType.STRING
         }]
     },
 
     async run(shiro, interaction, message, args) {
         if (interaction) return interaction.followUp("Due to option limitations, this command cannot be used as an interaction");
 
-
         let command: string = message?.toString().replace(`${shiro.prefix}r_run`, "") ?? `print("failed to get code")`;
 
-        let text = "R output";
         fs.mkdirSync(`${process.cwd().replaceAll("\\", "/")}/r_code/command_code/`, { recursive: true });
 
         fs.writeFileSync(`${process.cwd().replaceAll("\\", "/")}/r_code/command_code/code.r`, command);
@@ -64,10 +63,13 @@ let mathathon: command = {
 Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)`;
 
-            for (let i = 713; i < editText.length; i++) {
-                outputText += editText[i];
+            if (editText.length >= 720) {
+                for (let i = 720; i < editText.length; i++) {
+                    outputText += editText[i];
+                }
+            } else {
+                outputText += editText;
             }
-
             return message?.reply({ content: outputText })
         })
 

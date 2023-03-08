@@ -1,7 +1,2 @@
- print(9 + 10)
-
-name <- "car"
-age <- 900
-
-print(name)
-print(age)
+ print("hello world") 
+print("hello")
