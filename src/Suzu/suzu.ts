@@ -45,10 +45,12 @@ export default class Suzu {
         this.client.on("ready", async () => {
             console.log(`Logged in as ${this.client.user?.tag}`);
             this.#registerCommands();
-            this.client.user?.setStatus("dnd");
-            this.client.user?.setActivity({
-                type: ActivityType.Listening,
-                name: "To /info"
+            this.client.user?.setPresence({
+                status: "dnd",
+                activities: [{
+                    name: "to /info",
+                    type: ActivityType.Listening
+                }]
             })
         });
 
