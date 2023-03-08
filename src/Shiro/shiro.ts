@@ -35,11 +35,6 @@ export default class Shiro {
         //? Logging into the client
         this.client.login(token);
 
-        this.client.user?.setStatus("dnd");
-        this.client.user?.setActivity({
-            name: "to /imagine",
-            type: ActivityType.Listening
-        })
 
     }
 
@@ -49,6 +44,11 @@ export default class Shiro {
         this.client.on("ready", async () => {
             console.log(`Logged in as ${this.client.user?.tag}`);
             this.#registerCommands();
+            this.client.user?.setStatus("dnd");
+            this.client.user?.setActivity({
+                name: "to /imagine",
+                type: ActivityType.Listening
+            })
         });
 
         //? Run the commands with the interaction object

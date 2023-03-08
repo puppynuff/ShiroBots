@@ -37,11 +37,6 @@ export default class Suzu {
         //? Logging into the client
         this.client.login(token);
 
-        this.client.user?.setStatus("dnd");
-        this.client.user?.setActivity({
-            type: ActivityType.Listening,
-            name: "To /info"
-        })
     }
 
     //? Event handler
@@ -50,6 +45,11 @@ export default class Suzu {
         this.client.on("ready", async () => {
             console.log(`Logged in as ${this.client.user?.tag}`);
             this.#registerCommands();
+            this.client.user?.setStatus("dnd");
+            this.client.user?.setActivity({
+                type: ActivityType.Listening,
+                name: "To /info"
+            })
         });
 
         //? Run the commands with the interaction object
