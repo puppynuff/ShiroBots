@@ -1,0 +1,47 @@
+
+//? Update import
+import { command, CommandOptionType } from "../../shiro";
+
+const command_name: command = {
+    interaction: {
+        name: "",
+        description: "",
+        options: [{
+            name: "",
+            description: "",
+            type: CommandOptionType.${type}
+        }]
+    },
+
+    message: {
+        name: "",
+        description: "",
+        options: []
+    },
+
+    help: {
+        name: "",
+        description: "",
+        options: [
+            {
+                name: "",
+                description: "",
+                options: [],
+                type: ""
+            }
+        ]
+    },
+
+    early_access: false,
+    patreon: false,
+    async run(shiro, interaction, message, args) {
+        if (interaction) {
+        }
+
+
+        if (message && args) {
+        }
+    },
+}
+
+export default command_name;

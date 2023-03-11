@@ -1,6 +1,7 @@
 //? Importing modules
 import { GatewayIntentsString, Client, Message, CommandInteraction, Interaction, ActivityType } from "discord.js";
 import glob from "glob";
+import checkBirthdays from "./events/checkBirthdays";
 
 //? Creating Class for discord bot
 export default class Shiro {
@@ -51,6 +52,8 @@ export default class Shiro {
                     type: ActivityType.Listening
                 }]
             })
+
+            checkBirthdays();
         });
 
         //? Run the commands with the interaction object
