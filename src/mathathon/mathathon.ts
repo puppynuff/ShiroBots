@@ -10,7 +10,7 @@ export default class mathathon {
     client: Client;
     commands: Array<command>;
     commandNames: Array<string>;
-    prefix: string = "s!";
+    prefix: string = "g!";
     commandHelp: Array<{
         name: string;
         description: string;
@@ -49,7 +49,7 @@ export default class mathathon {
             this.client.user?.setPresence({
                 status: "dnd",
                 activities: [{
-                    name: "to s!r_run",
+                    name: "to g!r_run",
                     type: ActivityType.Listening
                 }]
             })

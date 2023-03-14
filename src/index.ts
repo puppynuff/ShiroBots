@@ -17,7 +17,7 @@ let SHIRO: Shiro | mathathon | undefined;
 let user_database: database | undefined;
 
 if (process.env.SHIROTOKEN) {
-    SHIRO = new mathathon(process.env.SHIROTOKEN, ["GuildMessages", "GuildMessageTyping", "GuildMembers", "Guilds", "MessageContent", "GuildPresences"]);
+    SHIRO = new Shiro(process.env.SHIROTOKEN, ["GuildMessages", "GuildMessageTyping", "GuildMembers", "Guilds", "MessageContent", "GuildPresences"]);
     user_database = new database(`${process.cwd().replaceAll("\\", "/")}/database`);
 }
 
