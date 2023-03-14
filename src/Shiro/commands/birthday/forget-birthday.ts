@@ -26,6 +26,7 @@ const forget_birthday: command = {
     patreon: false,
     async run(shiro, interaction, message, args) {
         if (interaction) {
+            if (!user_database) return interaction.followUp("Database failed to generate!");
             let data = user_database.find_user_data(interaction.user.id);
             if (!data) return interaction.followUp("Failed to retrieve data");
             data.data.birthdayInfo = undefined;
@@ -36,6 +37,7 @@ const forget_birthday: command = {
 
 
         if (message && args) {
+            if (!user_database) return message.reply("Database failed to generate!");
             let data = user_database.find_user_data(message.author.id);
             if (!data) return message.reply("Failed to retrieve data");
             data.data.birthdayInfo = undefined;

@@ -124,6 +124,7 @@ const remember_birthday: command = {
     patreon: false,
     async run(shiro, interaction, message, args) {
         if (interaction) {
+            if (!user_database) return interaction.followUp("Database failed to generate!");
             let day = interaction.options.data.find((value) => value.name == "day");
             let month = interaction.options.data.find((value) => value.name == "month");
             let year = interaction.options.data.find((value) => value.name == "year");
@@ -159,6 +160,7 @@ const remember_birthday: command = {
 
 
         if (message && args) {
+            if (!user_database) return message.reply("Database failed to generate!");
             let day = isNaN(Number(args[1]));
             let month = args[2];
             let year = isNaN(Number(args[3]));

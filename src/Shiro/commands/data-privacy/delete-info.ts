@@ -19,6 +19,7 @@ let delete_info: command = {
     patreon: false,
     async run(shiro, interaction, message, args) {
         if (interaction) {
+            if (!user_database) return interaction.followUp("Database failed to generate!");
             let data = user_database.delete_user_data(interaction.user.id);
             if (!data) return interaction.followUp("Either we don't have any info, or there was an error finding the file!");
 
@@ -26,6 +27,7 @@ let delete_info: command = {
         }
 
         if (message) {
+            if (!user_database) return message.reply("Database failed to generate!");
             let data = user_database.delete_user_data(message.author.id);
             if (!data) return message.reply("Either we don't have any info, or there was an error finding the file");
 

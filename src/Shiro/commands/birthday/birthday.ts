@@ -24,6 +24,7 @@ let show_info: command = {
     patreon: false,
     async run(shiro, interaction, message, args) {
         if (interaction) {
+            if (!user_database) return interaction.followUp("Database failed to generate!");
             let user = interaction.options.data.find((value) => value.name == "member");
 
             if (user) {
@@ -51,6 +52,7 @@ let show_info: command = {
         }
 
         if (message) {
+            if (!user_database) return message.reply("Database failed to generate!");
             if (message.mentions.members == null) {
                 let data = user_database.find_user_data(message.author.id);
                 if (!data) return message.reply("Failed to get data!");

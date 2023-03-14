@@ -5,6 +5,9 @@ import glob from "glob";
 import fs from "fs";
 
 export default function checkBirthdays() {
+    if (!user_database) {
+        return;
+    }
     let data = user_database.read_bot_data("birthday_check");
     let date = new Date();
     if (!data) {
@@ -54,6 +57,7 @@ function checkBday(date: Date) {
 
                     if (bdate != today) continue;
 
+                    if (!SHIRO) return;
                     SHIRO.client.guilds.cache.forEach((guild) => {
                         let user = guild.members.cache.get(data.userID);
 

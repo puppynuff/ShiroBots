@@ -52,7 +52,7 @@ let economy_info: command = {
     early_access: false,
     async run(shiro, interaction, message, args) {
         if (interaction) {
-
+            if (!user_database) return interaction.followUp("Database failed to generate!");
             let amount = interaction.options.data.find((value) => value.name === "amount");
             let type = interaction.options.data.find((value) => value.name === "type");
 
@@ -90,7 +90,7 @@ let economy_info: command = {
             }
 
         } else if (message) {
-
+            if (!user_database) return message.reply("Database failed to generate!");
         }
     },
 }
