@@ -61,6 +61,8 @@ let mathathon: command = {
                 command += `${baseName.replace(".csv", "")} <- read.csv(file = '${files[i]}')\n`;
             }
 
+            command += `source("${process.cwd().replaceAll("\\", "/")}/r_code/command_code/imports/FastPassV1.R")\n`;
+
             command += message?.toString().replace(`${shiro.prefix}r_run`, "") ?? `print("failed to get code")`;
 
             fs.mkdirSync(`${process.cwd().replaceAll("\\", "/")}/r_code/command_code/`, { recursive: true });
@@ -72,7 +74,7 @@ let mathathon: command = {
                 let editText = output.toString();
                 let outputText: string = `R version 4.2.2 (2022-10-31 ucrt) -- "Innocent and Trusting"
     Copyright (C) 2022 The R Foundation for Statistical Computing
-    Platform: x86_64-w64-mingw32/x64 (64-bit)`;
+    Platform: x86_64-w64-mingw32/x64 (64-bit)\n`;
 
                 if (editText.length >= 720) {
                     for (let i = 720; i < editText.length; i++) {

@@ -1,0 +1,12 @@
+number substitution?,row,grade,Category,Question,Answer,
+YES,,4,Money,x quarters euqal to how many Dimes?,x*.25/.1,x must be even
+NO,,4,Money,If you have a dollar and spend 5 cents how much money do you have left?,95 cents,
+NO,,4,Money,If you have a dollar and spend 15 cents how much money do you have left?,85 cents,
+NO,,4,Money,If you have a dollar and spend 25 cents how much money do you have left?,75 cents,
+NO,,4,Money,If you have a dollar and spend 35 cents how much money do you have left?,65 cents,
+NO,,4,Money,If you have a dollar and spend 45 cents how much money do you have left?,55 cents,
+NO,,4,Money,If you have a dollar and spend 55 cents how much money do you have left?,45 cents,
+NO,,4,Money,If you have a dollar and spend 65 cents how much money do you have left?,35 cents,
+NO,,4,Money,If you have a dollar and spend 75 cents how much money do you have left?,25 cents,
+NO,,4,Money,If you have a dollar and spend 85 cents how much money do you have left?,15 cents,
+NO,,4,Money,If you have a dollar and spend 95 cents how much money do you have left?,5 cents,

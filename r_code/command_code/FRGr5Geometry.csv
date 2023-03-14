@@ -1,0 +1,14 @@
+number substitution?,row,grade,Category,Question,Answer
+YES,29,5,Geometry ,what is the area of a rectagle with a Length of x any a width of y?,x*y
+YES,30,5,Geometry ,what is the area of a square with a side length of x?,x^2
+NO,31,5,Geometry ,define diameter,"a straight line passing from side to side through the center of a body or figure, especially a circle or sphere."
+NO,32,5,Geometry ,define radius,a straight line from the center to the circumference of a circle
+NO,33,5,Geometry ,define circumfrence,the distance around the outside of a circle
+NO,34,5,Geometry ,define chord of a circle,A line segment joining any two points on the circumference of the circle.
+NO,35,5,Geometry ,define acute angle,An angle less than 90 degrees
+NO,36,5,Geometry ,define a right angle ,A 90 degree angle 
+NO,37,5,Geometry ,define an obtuse angle,An angle more than 90 degrees
+NO,38,5,Geometry ,Name two properties of an equalateral triangle,"3equal sides, 3 equal angles "
+NO,39,5,Geometry ,Name two properties of an isosoless triangle,"2 equal sides, 2 equal angles "
+NO,40,5,Geometry ,Name two properties of an scalene triangle,"0 equal sides, 0 equal angles"
+NO,41,5,Geometry ,What is the sum of the interior angles of all triangles?,180 degrees

@@ -1,0 +1,6 @@
+number substitution?,row,grade,Category,Question,Answer
+YES,,5,Money,If you spend x.yz and give the cashier $20 how much change do you get back?,20-x.yz
+YES,,5,Money,If you spend x.yz and give the cashier $10 how much change do you get back?,10-x.yz
+Yes,,5,Money,How many nickles are there in $X?,X
+Yes,,5,Money,How many dimes are there in $X*.10?,X
+Yes,,5,Money,How many quarters are there in $X*.25?,X

@@ -6,6 +6,4 @@ dist/
 images/
 src/Suzu/commands/private
 database/
-r_code/
 database/
-src/training

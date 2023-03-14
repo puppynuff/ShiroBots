@@ -1,0 +1,16 @@
+num sub?,,grade,Category,question,answer
+YES,,5,Time & Measurement,How many Meters is X Centemeters?,X/100
+YES,,5,Time & Measurement,How many Millemeters is X Centemeters?,X*10
+YES,,5,Time & Measurement,How many Centemeters is X Millimeters?,X/10
+YES,,5,Time & Measurement,How many Millemeters is X Meters?,X/1000
+YES,,5,Time & Measurement,How many Meters is X Millimeters?,X*1000
+YES,,5,Time & Measurement,How many Meters is X Kilometers?,X*1000
+YES,,5,Time & Measurement,How many Kilometers is X Meters?,x*1000
+YES,,5,Time & Measurement,How many Meters is X Kilometers?,x/1000
+YES,,5,Time & Measurement,How many Meters is X Centemeters?,X/100
+YES,,5,Time & Measurement,How many Millemeters is X Centemeters?,X*10
+YES,,5,Time & Measurement,How many Centemeters is X Millimeters?,X/10
+YES,,5,Time & Measurement,How many Millemeters is X Meters?,X/1000
+YES,,5,Time & Measurement,How many Meters is X Millimeters?,X*1000
+YES,,5,Time & Measurement,How many Meters is X Kilometers?,X*1000
+YES,,5,Time & Measurement,How many Kilometers is X Meters?,x*1000

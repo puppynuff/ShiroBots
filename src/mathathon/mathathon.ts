@@ -116,7 +116,7 @@ export default class mathathon {
     //? Registering commands
     #registerCommands() {
         //? For each file in the commands directory push the stuff into the commands array.
-        glob(`${process.cwd().replaceAll("\\", "/")}/dist/mathathon/commands/mathathon/**/*.js`, async (err, files) => {
+        glob(`${process.cwd().replaceAll("\\", "/")}/dist/Shiro/commands/mathathon/**/*.js`, async (err, files) => {
             //? If there is an error throw the error.
             if (err) throw new Error(err.message);
 

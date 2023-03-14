@@ -1,0 +1,11 @@
+number substitution?,row,grade,Category,Question,Answer
+YES,19,4,Geometry ,what is the perimiter of a rectagle with a Length of x any a width of y?,2(x+y)
+YES,20,4,Geometry ,what is the perimiter of a square with a side length of x?,4x
+NO,21,4,Geometry ,what are parralel lines?,lines that will never touch
+NO,22,4,Geometry ,what are perpendicular lines?,lines that meet to create 4 90  degree angles
+NO,23,4,Geometry ,Name two charicteristics of a square.,"4 sides, all sides same length, right angles, 2 pairs of parralel sides"
+NO,24,4,Geometry ,Name two charicteristics of a rectangle.,"4 sides, 2 differnt side lengths, right angles, 2 pairs of parralel sides"
+NO,25,4,Geometry ,Name two charicteristics of a paralelagram.,"4 sides, 2 differnt side lengths, 2 pairs of parralel sides"
+NO,26,4,Geometry ,Name two charicteristics of a rhombus.,"4 sides, all sides the same length, 2 pairs of parralel sides"
+NO,27,4,Geometry ,Name two charicteristics of a kite.,"4 sides, 2 differnt side lengths, no parralel sides"
+NO,28,4,Geometry ,Name two charicteristics of a trapazoid.,"4 sides, 2 differnt side lengths, one pair of paralel sides"

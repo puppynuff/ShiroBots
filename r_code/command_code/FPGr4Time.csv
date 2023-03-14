@@ -1,0 +1,18 @@
+num sub?,,grade,Category,question,answer,
+NO,,4,Time & Measurement,How many days does January have?,31,
+NO,,4,Time & Measurement,How many days does Febuary have?,28,
+NO,,4,Time & Measurement,How many days does March have?,31,
+NO,,4,Time & Measurement,How many days does April have?,30,
+NO,,4,Time & Measurement,How many days does May have?,31,
+NO,,4,Time & Measurement,How many days does June have?,30,
+NO,,4,Time & Measurement,How many days does July have?,31,
+NO,,4,Time & Measurement,How many days does August have?,31,
+NO,,4,Time & Measurement,How many days does September have?,30,
+NO,,4,Time & Measurement,How many days does October have?,31,
+NO,,4,Time & Measurement,How many days does November have?,30,
+NO,,4,Time & Measurement,How many days does December have?,31,
+YES,,4,Time & Measurement,What time is it x hours after y:00?,"mod(x+y,12)",
+YES,,4,Time & Measurement,"If a restaurant starts serving breakfast at X, and stops at Y how many hours do they serve breakfast for?",y-x ,
+YES,,4,Time & Measurement,x*60 minutes is how many hours?,x,
+YES,,4,Time & Measurement,What is X:00 PM  in 24-hour time?,x*2,1:12: PM
+YES,,4,Time & Measurement,What is X:00 in 12-hour time?,x/2 if x/2=.5 then --30,13:24

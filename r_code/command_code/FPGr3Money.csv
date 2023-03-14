@@ -1,0 +1,15 @@
+number substitution?,row,grade,Category,Question,Answer
+NO,,3,Money,If you have a dollar and spend 25 cents how much money do you have left?,75 cents
+NO,,3,Money,If you have a dollar and spend 50 cents how much money do you have left?,50
+NO,,3,Money,If you have a dollar and spend 75 cents how much money do you have left?,25
+YES,,3,Money,x dimes is euqal to how many Nickles?,x*2
+YES,,3,Money,x quarters euqal to how many Nickles?,x*5
+NO,,3,Money,If you have a dollar and spend 10 cents how much money do you have left?,90 cents
+NO,,3,Money,If you have a dollar and spend 20 cents how much money do you have left?,80 cents
+NO,,3,Money,If you have a dollar and spend 30 cents how much money do you have left?,70 cents
+NO,,3,Money,If you have a dollar and spend 40 cents how much money do you have left?,60cents
+NO,,3,Money,If you have a dollar and spend 50 cents how much money do you have left?,50 cents
+NO,,3,Money,If you have a dollar and spend 60 cents how much money do you have left?,40 cents
+NO,,3,Money,If you have a dollar and spend 70 cents how much money do you have left?,30 cents
+NO,,3,Money,If you have a dollar and spend 80 cents how much money do you have left?,20 cents
+NO,,3,Money,If you have a dollar and spend 90 cents how much money do you have left?,10 cents

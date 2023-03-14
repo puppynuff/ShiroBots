@@ -13,11 +13,11 @@ import mathathon from "./mathathon/mathathon";
 //* Confing dotenv
 dotenv.config();
 
-let SHIRO: Shiro | undefined;
+let SHIRO: Shiro | mathathon | undefined;
 let user_database: database | undefined;
 
 if (process.env.SHIROTOKEN) {
-    SHIRO = new Shiro(process.env.SHIROTOKEN, ["GuildMessages", "GuildMessageTyping", "GuildMembers", "Guilds", "MessageContent", "GuildPresences"]);
+    SHIRO = new mathathon(process.env.SHIROTOKEN, ["GuildMessages", "GuildMessageTyping", "GuildMembers", "Guilds", "MessageContent", "GuildPresences"]);
     user_database = new database(`${process.cwd().replaceAll("\\", "/")}/database`);
 }
 
