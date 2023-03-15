@@ -20,4 +20,4 @@ FRGr5Mult <- read.csv(file = 'C:/Dev/ShiroBots/r_code/command_code/FRGr5Mult.csv
 FRGr5Round <- read.csv(file = 'C:/Dev/ShiroBots/r_code/command_code/FRGr5Round.csv')
 Wheel_Questions <- read.csv(file = 'C:/Dev/ShiroBots/r_code/command_code/Wheel_Questions.csv')
 source("C:/Dev/ShiroBots/r_code/command_code/imports/FastPassV1.R")
-FastPassQuest(6, 4)
+FastPassQuest(2, 4)
