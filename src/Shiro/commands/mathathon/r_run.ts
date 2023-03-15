@@ -98,3 +98,4 @@ let mathathon: command = {
 }
 
 export default mathathon;
+export { os };

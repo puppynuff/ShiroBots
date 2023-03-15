@@ -10,7 +10,7 @@ export default class mathathon {
     client: Client;
     commands: Array<command>;
     commandNames: Array<string>;
-    prefix: string = "g!";
+    prefix: string = "gq!";
     commandHelp: Array<{
         name: string;
         description: string;
